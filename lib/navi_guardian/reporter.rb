@@ -1,3 +1,5 @@
+# coding: utf-8
+
 # -*- encoding: utf-8 -*-
 require 'mail'
 require 'erb'
@@ -21,6 +23,9 @@ class Reporter
 
     contents = <<-EOS
 分譲地：<%= division_name %>
+<% results.each do |result| %>
+  <%= result.to_s %>
+<% end %>
 EOS
 
     mail = Mail.new do

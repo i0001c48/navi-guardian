@@ -30,7 +30,7 @@ class Section
     self.column = column
   end
   def ret_val
-    [self.name, self.power, self.column]
+    return [self.name, self.power, self.column]
   end
 end
 
