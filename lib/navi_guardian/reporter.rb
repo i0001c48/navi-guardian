@@ -12,7 +12,7 @@ class Reporter
       :address              => "smtp.gmail.com",
       :port                 => 587,
       :user_name            => 'ymt07066111514@gmail.com',
-      :password             => 'yamat2323',
+      :password             => '******',
       :authentication       => 'plain',
       :enable_starttls_auto => true  
     }
