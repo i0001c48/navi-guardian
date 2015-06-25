@@ -11,7 +11,7 @@ class Reporter
     options = { 
       :address              => "smtp.gmail.com",
       :port                 => 587,
-      :user_name            => 'ymt07066111514@gmail.com',
+      :user_name            => 'user@gmail.com',
       :password             => '******',
       :authentication       => 'plain',
       :enable_starttls_auto => true  
@@ -29,9 +29,9 @@ class Reporter
 EOS
 
     mail = Mail.new do
-      from     'ymt07066111514@gmail.com'
-      to       'iino.tat@yamat.co.jp'
-      subject  "ソーラー君監視システム　#{Time.now.strftime('%Y/%m/%d %H時台')}"
+      from     'from@address'
+      to       'to@address'
+      subject  "title　#{Time.now.strftime('%Y/%m/%d %H時台')}"
       body     ERB.new(contents).result(binding)
     end
 
